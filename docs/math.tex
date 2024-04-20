@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newcommand{\vect}{\mathbf}
+\begin{document}
+
+% Exercises for Chapter 2
+\begin{enumerate}
+	\item If $\vect{P} = \langle 2,2,1 \rangle$ and $\vect{Q} = \langle 1,-2,0 \rangle$, then
+	\begin{enumerate}
+		\item $\vect{P} \cdot \vect{Q} = 0$
+		\item $\vect{P} \times \vect{Q} = \langle 0,1,-6 \rangle$
+		\item ${\text{proj}}_{\vect{P}}\vect{Q} = \langle -\frac{4}{9}, -\frac{4}{9}, -\frac{2}{9} \rangle$
+	\end{enumerate}
+	\item
+		\begin{align}
+			\mathbf{e}_1' &= \langle \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 0 \rangle\\
+			\mathbf{e}_2' &= \langle -1, 1, -1 \rangle\\
+			\mathbf{e}_3' &= \langle 1, -1, -2 \rangle
+		\end{align}
+	\item $17.5$
+	\item
+		\begin{proof}
+			\begin{align*}
+				(\vect{V} \cdot \vect{W})^2 + \lVert \vect{V} \times \vect{W} \rVert^2
+				&= \cos^2 \alpha \lVert \vect{V} \rVert^2 \lVert \vect{W} \rVert^2
+				+ \sin^2 \alpha \lVert \vect{V} \rVert^2 \lVert \vect{W} \rVert^2\\
+				&= (\cos^2 \alpha + \sin^2 \alpha)(\lVert \vect{V} \rVert^2 \lVert \vect{W} \rVert^2)\\
+				&= V^2W^2
+			\end{align*}
+		\end{proof}
+	\item
+		\begin{proof}
+			\begin{equation*}
+				(\vect{P} \times \vect{Q} \times \vect{R})_x = \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_z \vect{R}_z - \vect{P}_x \vect{Q}_y \vect{R}_y + \vect{P}_y \vect{Q}_x \vect{R}_y
+			\end{equation*}
+			\begin{align*}
+				((\vect{P} \cdot \vect{R}) \vect{Q} - (\vect{Q} \cdot \vect{R}) \vect{P})_x
+				&= \vect{P}_x \vect{Q}_x \vect{R}_x + \vect{P}_y \vect{Q}_x \vect{R}_y + \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_x \vect{R}_x - \vect{P}_x \vect{Q}_y \vect{R}_y - \vect{P}_x \vect{Q}_z \vect{R}_z\\
+				&= \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_z \vect{R}_z - \vect{P}_x \vect{Q}_y \vect{R}_y + \vect{P}_y \vect{Q}_x \vect{R}_y
+			\end{align*}
+		\end{proof}
+	\item
+		\begin{proof}
+			\begin{align*}
+				\lVert \vect{P} - \vect{Q} \rVert^2
+				&= (\vect{P} - \vect{Q}) \cdot (\vect{P} - \vect{Q})\\
+				&= P^2 + Q^2 - 2 \vect{P} \cdot \vect{Q}\\
+				&\geq P^2 + Q^2 - 2 \lVert \vect{P} \rVert \lVert \vect{Q} \rVert\\
+				&= (\lVert \vect{P} \rVert - \lVert \vect{Q} \rVert)^2
+			\end{align*}
+		\end{proof}
+\end{enumerate}
+\end{document}
