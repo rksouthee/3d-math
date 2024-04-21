@@ -31,14 +31,16 @@
 		\end{proof}
 	\item
 		\begin{proof}
+			Direct computation of the $x$ component gives us
 			\begin{equation*}
 				(\vect{P} \times \vect{Q} \times \vect{R})_x = \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_z \vect{R}_z - \vect{P}_x \vect{Q}_y \vect{R}_y + \vect{P}_y \vect{Q}_x \vect{R}_y
 			\end{equation*}
 			\begin{align*}
 				((\vect{P} \cdot \vect{R}) \vect{Q} - (\vect{Q} \cdot \vect{R}) \vect{P})_x
 				&= \vect{P}_x \vect{Q}_x \vect{R}_x + \vect{P}_y \vect{Q}_x \vect{R}_y + \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_x \vect{R}_x - \vect{P}_x \vect{Q}_y \vect{R}_y - \vect{P}_x \vect{Q}_z \vect{R}_z\\
-				&= \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_z \vect{R}_z - \vect{P}_x \vect{Q}_y \vect{R}_y + \vect{P}_y \vect{Q}_x \vect{R}_y
+				&= \vect{P}_z \vect{Q}_x \vect{R}_z - \vect{P}_x \vect{Q}_z \vect{R}_z - \vect{P}_x \vect{Q}_y \vect{R}_y + \vect{P}_y \vect{Q}_x \vect{R}_y,
 			\end{align*}
+			The $y$ and $z$ components can be checked in a similar manner.
 		\end{proof}
 	\item
 		\begin{proof}
@@ -51,4 +53,148 @@
 			\end{align*}
 		\end{proof}
 \end{enumerate}
+
+% Exercises for Chapter 3
+\begin{enumerate}
+	\item
+	\begin{enumerate}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					2 & 7\\
+					-3 & \frac{1}{2}
+				\end{vmatrix}
+				=
+				22
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					0 & 0 & 1\\
+					0 & 1 & 0\\
+					1 & 0 & 0
+				\end{vmatrix}
+				=
+				-1
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					\frac{1}{2} & \frac{\sqrt{3}}{2} & 0\\
+					-\frac{\sqrt{3}}{2} & \frac{1}{2} & 0\\
+					0 & 0 & 1
+				\end{vmatrix}
+				=
+				1
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					5 & 7 & 1\\
+					17 & 2 & 64\\
+					10 & 14 & 2
+				\end{vmatrix}
+				=
+				0
+			\end{equation*}
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					2 & 0 & 0\\
+					0 & 3 & 0\\
+					0 & 0 & 4
+				\end{vmatrix}^{-1}
+				=
+				\begin{vmatrix}
+					\frac{1}{2} & 0 & 0\\
+					0 & \frac{1}{3} & 0\\
+					0 & 0 & \frac{1}{4}
+				\end{vmatrix}
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					1 & 0 & 0\\
+					0 & 2 & 2\\
+					3 & 0 & 8
+				\end{vmatrix}^{-1}
+				=
+				\begin{vmatrix}
+					1 & 0 & 0\\
+					\frac{3}{8} & \frac{1}{2} & -\frac{1}{8}\\
+					-\frac{3}{8} & 0 & \frac{1}{8}
+				\end{vmatrix}
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					\cos \theta & 0 & -\sin \theta\\
+					0 & 1 & 0\\
+					\sin \theta & 0 & \cos \theta
+				\end{vmatrix}^{-1}
+				=
+				\begin{vmatrix}
+					\cos \theta & 0 & -\sin \theta\\
+					0 & 1 & 0\\
+					\sin \theta & 0 & \cos \theta
+				\end{vmatrix}
+			\end{equation*}
+		\item
+			\begin{equation*}
+				\begin{vmatrix}
+					1 & 0 & 0 & 4\\
+					0 & 1 & 0 & 3\\
+					0 & 0 & 1 & 7\\
+					0 & 0 & 0 & 1
+				\end{vmatrix}^{-1}
+				=
+				\begin{vmatrix}
+					1 & 0 & 0 & -4\\
+					0 & 1 & 0 & -3\\
+					0 & 0 & 1 & -7\\
+					0 & 0 & 0 & 1
+				\end{vmatrix}
+			\end{equation*}
+	\end{enumerate}
+\item
+	\begin{equation*}
+		\left[
+		\begin{matrix}
+			x\\
+			y\\
+			z
+		\end{matrix}
+		\right]
+		=
+		a
+		\left[
+		\begin{matrix}
+			1\\
+			-2\\
+			1
+		\end{matrix}
+		\right]
+	\end{equation*}
+\item $\lambda_1=2$, $\lambda_2=-1$, $\lambda_3=5$.
+\item TODO
+\item \begin{proof}
+		We can use induction on $n$, where $n$ is the size of the matrix $M$, we want to prove that $\det \mathbf{M} = \prod_{i=1}^{n}M_{ii}$. For the base case $n = 1$ we have $\det \mathbf{M} = M_{11}$.
+		Assume the case holds for $\mathbf{N}$ of size $k$, show it holds for $\mathbf{M}$ of size $k + 1$.
+		\begin{align*}
+			\begin{vmatrix}
+				M_{11} & \vect{V}^T\\
+				\mathbf{0} & \mathbf{N}
+			\end{vmatrix}
+			&=
+			M_{ii} \det \mathbf{N}\\
+			&=
+			\prod_{i=1}^{k+1}M_{ii}
+		\end{align*}
+\end{proof}
+\item TODO
+\end{enumerate}
+
 \end{document}
