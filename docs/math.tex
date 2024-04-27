@@ -1,9 +1,12 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{report}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \newcommand{\vect}{\mathbf}
 \begin{document}
 
+\chapter{The Rendering Pipeline}
+
+\chapter{Vectors}
 % Exercises for Chapter 2
 \begin{enumerate}
 	\item If $\vect{P} = \langle 2,2,1 \rangle$ and $\vect{Q} = \langle 1,-2,0 \rangle$, then
@@ -54,6 +57,7 @@
 		\end{proof}
 \end{enumerate}
 
+\chapter{Matrices}
 % Exercises for Chapter 3
 \begin{enumerate}
 	\item
@@ -195,6 +199,42 @@
 		\end{align*}
 \end{proof}
 \item TODO
+\end{enumerate}
+
+\chapter{Transforms}
+% Exercises for Chapter 4
+\begin{enumerate}
+	\item
+		\begin{align*}
+			\mathbf{R}_x &=
+			\left[ \begin{matrix}
+				1 & 0 & 0\\
+				0 & \frac{\sqrt 3}{2} & -\frac{1}{2}\\
+				0 & \frac{1}{2} & \frac{\sqrt 3}{2}
+			\end{matrix} \right],\\
+			\mathbf{R}_y &=
+			\left[ \begin{matrix}
+				\frac{\sqrt 3}{2} & 0 & \frac{1}{2}\\
+				0 & 1 & 0\\
+				-\frac{1}{2} & 0 & \frac{\sqrt 3}{2}
+			\end{matrix} \right],\\
+			\mathbf{R}_z &=
+			\left[ \begin{matrix}
+				\frac{\sqrt 3}{2} & -\frac{1}{2} & 0\\
+				\frac{1}{2} & \frac{\sqrt 3}{2} & 0\\
+				0 & 0 & 1
+			\end{matrix} \right]
+		\end{align*}
+	\item $\mathbf{q} = \pm (\frac{\sqrt 3}{2} + \langle 0, \frac{3}{10}, \frac{2}{5} \rangle$)
+	\item If we add the following results we get to the desired result
+		\begin{align*}
+			s_1s_2 &= w_1w_2\\
+			\mathbf{v}_1 \cdot \mathbf{v}_2 &= x_1x_2 + y_1y_2 + z_1z_2\\
+			s_1\mathbf{v}_2 &= \langle w_1x_2 + w_1y_2 + w_1z_2 \rangle\\
+			s_2\mathbf{v}_1 &= \langle w_2x_1 + w_2y_1 + w_2z_1 \rangle\\
+			\mathbf{v}_1 \times \mathbf{v}_2 &= \langle y_1z_2 - z_1y_2, z_1x_2 - z_2x_1, x_1y_2 - y_1x_2 \rangle.
+		\end{align*}
+	\item TODO
 \end{enumerate}
 
 \end{document}
