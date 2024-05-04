@@ -237,4 +237,37 @@
 	\item TODO
 \end{enumerate}
 
+\chapter{Geometry for 3D Engines}
+% Exercises for Chapter 5
+\begin{enumerate}
+	\item $\langle 2, 1, 0, 4 \rangle$
+	\item $\frac{(\mathbf{Q} - \mathbf{S}) \cdot \mathbf{V}}{V^2}$
+	\item We want to show that $\frac{\lVert (\mathbf{Q} - \mathbf{S}) \times \mathbf{V} \rVert}{\lVert \mathbf{V} \rVert}$
+		is equal to Equation 5.4. Squaring both sides and getting rid of the denominator we have
+		\begin{equation*}
+			\lVert (\mathbf{Q} - \mathbf{S}) \times \mathbf{V} \rVert^2
+			=
+			V^2(Q - S)^2 - [(Q - S) \cdot V]^2,
+		\end{equation*}
+		which is true using Equation 2.30.
+	\item $63.1$ degrees.
+	\item
+		Left: $\langle \frac{1}{\sqrt{2}}, 0, -\frac{1}{\sqrt{2}}, 0 \rangle$\\
+		Right: $\langle -\frac{1}{\sqrt{2}}, 0, -\frac{1}{\sqrt{2}}, 0 \rangle$\\
+		Bottom: $\langle 0, \frac{4}{5}, -\frac{3}{5}, 0 \rangle$\\
+		Top: $\langle 0, -\frac{4}{5}, -\frac{3}{5}, 0 \rangle$.
+	\item
+		\begin{equation*}
+			\left[
+				\begin{matrix}
+					\frac{2n}{r - l} & 0 & \frac{r + l}{r - l} & 0\\
+					0 & \frac{2n}{t - b} & \frac{t + b}{t - b} & 0\\
+					0 & 0 & -\frac{f}{f - n} & -\frac{nf}{f - n}\\
+					0 & 0 & -1 & 0
+				\end{matrix}
+				\right]
+		\end{equation*}
+	\item TODO
+\end{enumerate}
+
 \end{document}
