@@ -283,6 +283,34 @@
 	\item TODO
 	\item $\langle -0.315, 0.946, -0.079 \rangle$.
 	\item TODO
+	\item TODO
+\end{enumerate}
+
+\chapter{Lighting and Shading}
+% Exercises for Chapter 7
+\begin{enumerate}
+	\item Using equation 7.3 the intensity from the light source at one meter is $\frac{2}{3}$. We want
+		to find the distance $d$ where the intensity is $\frac{1}{6}$. Solving for $d$ we have the distance
+		from the light source where the intensity is one-fourth is $\sqrt{10} \approx 3.16$ meters.
+	\item Pluggin in the values we need to find the radius in the $xy$-plane that satisfies
+		\begin{equation*}
+			\frac{1}{2} = {\left(\frac{10}{\sqrt{\mathbf{Q}_x^2 + \mathbf{Q}_y^2 + 100}}\right)}^8.
+		\end{equation*}
+		Solving this we find that the radius is approximately $4.35$ meters.
+	\item If the viewer is in front of the surface and the light source is behind the surface then the halfway vector
+		can be in front of the surface giving $\mathbf{N} \cdot \mathbf{H} > 0$ and $\mathbf{N} \cdot \mathbf{L} < 0$.
+		For example if we had the following vectors
+		\begin{align*}
+			\mathbf{N} &= \langle 0, 1 \rangle\\
+			\mathbf{L} &= \langle 0.949, -0.316 \rangle\\
+			\mathbf{V} &= \langle 0.447, 0.894 \rangle\\
+			\mathbf{H} &= \langle 0.924, 0.383 \rangle\\
+		\end{align*}
+	\item TODO % Not sure how to clean prove this
+	\item TODO % Can modify Listing 7.1 to also calculate the vertex normals
+	\item TODO
+	\item TODO % Current experimenting with ray tracers
+	\item TODO % Need to finish Exercise 7 first
 \end{enumerate}
 
 \end{document}
