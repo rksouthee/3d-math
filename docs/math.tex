@@ -313,4 +313,27 @@
 	\item TODO % Need to finish Exercise 7 first
 \end{enumerate}
 
+\chapter{Visibility Determination}
+% Exercises for Chapter 8
+\begin{enumerate}
+	\item For two points $\mathbf{Q}_1$ and $\mathbf{Q}_2$ we have
+		\begin{align*}
+			Q &= \mathbf{Q}_1 + \frac{d}{2}(\mathbf{Q}_2 - \mathbf{Q}_1)\\
+			r &= \frac{d + r_1 + r_2}{2}
+		\end{align*}
+		where $d = \lVert \mathbf{Q}_2 - \mathbf{Q}_1 \rVert$.
+	\item If $s < h$ then the center $\mathbf{Q}$ is at $\langle 0, 0, h - r \rangle$. We can form the triangle
+		with sides of length $r$, $s$ and $h - r$ then we have
+		\begin{align*}
+			r^2 &= s^2 + {(h - r)}^2\\
+			r^2 &= s^2 + h^2 - 2hr + r^2\\
+			2hr &= s^2 + h^2\\
+			r &= \frac{s^2 + h^2}{2h}.
+		\end{align*}
+		If $s \geq h$ then the center $\mathbf{Q}$ is at $\langle 0, 0, 0 \rangle$ and $r = s$.
+	\item $\frac{\sqrt{3}}{6} \approx 0.289$.
+	\item TODO
+	\item TODO
+\end{enumerate}
+
 \end{document}
